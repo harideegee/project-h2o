@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="display-3">Results</h1>
+<p class="lead">Your input returned the following result: </p>
+
+<p class="lead">pH: {{ context.ph }}</p>
+<p class="lead">Hardness: {{ context.hard }}mg/L</p>
+<p class="lead">Solids: {{ context.solid }}ppm</p>
+<p class="lead">Chloramines: {{ context.chamine }}ppm</p>
+<p class="lead">Sulfate: {{ context.sulfate }}mg/L</p>
+<p class="lead">Conductivity: {{ context.cond }}&mu;S/cm</p>
+<p class="lead">Organic Carbon: {{ context.oc }}ppm</p>
+<p class="lead">Trihalomethanes: {{ context.thm }}&mu;g/L</p>
+<p class="lead">Turbidity: {{ context.turb }}NTU</p>
+
+<h1 class="display-4">Potability: ___</h1>
+
+{% endblock %}
