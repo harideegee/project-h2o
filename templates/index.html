@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container text-center">
+        <h1 class="display-3">Testing the potability of water</h1>
+        <p class="lead">Please fill in the details with great accuracy to compute accurate results and help train the model.</p>
+    <form action="/result/" method="POST">
+        <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="ph">pH</label>
+            <input type="text" class="form-control" name="ph" placeholder="pH of water (0 to 14)" required>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="hardness">Hardness (mg/L)</label>
+            <input type="text" class="form-control" name="hardness" placeholder="Capacity of water to precipitate soap" required>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="solids">Solids (ppm)</label>
+            <input type="text" class="form-control" name="solids" placeholder="Total dissolved solids" required>
+        </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="chloramines">Chloramines (ppm)</label>
+                <input type="text" class="form-control" name="chloramines" placeholder="Amount of Chloramines" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="sulfate">Sulfate (mg/L)</label>
+                <input type="text" class="form-control" name="sulfate" placeholder="Amount of Sulfates dissolved" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="conductivity">Conductivity (&mu;S/cm)</label>
+                <input type="text" class="form-control" name="conductivity" placeholder="Electrical conductivity of water" required>
+            </div>	
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="oc">Organic carbon (ppm)</label>
+                <input type="text" class="form-control" name="oc" placeholder="Amount of organic carbon" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="trihalomethanes">Trihalomethanes (&mu;g/L)</label>
+                <input type="text" class="form-control" name="trihalomethanes" placeholder="Amount of Trihalomethanes" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="turbidity">Turbidity (NTU)</label>
+                <input type="text" class="form-control" name="turbidity" placeholder="Measure of light emiting property of water" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+{% endblock %}
