@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-
+<div class="card" style="padding: 20px; margin: 20px;">
 <h1 class="display-3">Results</h1>
 <p class="lead">Your input returned the following result: </p>
 
@@ -15,5 +15,6 @@
 <p class="lead">Turbidity: {{ context.turb }}NTU</p>
 
 <h1 class="display-4">Potability: {{ context.potability }}</h1>
+</div>
 
 {% endblock %}

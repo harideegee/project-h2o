@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename = 'logo.ico')}}">
+    <script src="https://kit.fontawesome.com/70816502a6.js" crossorigin="anonymous"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,12 +12,13 @@
 
     <title>Project H2O</title>
   </head>
-  <body>
+  <body class="bg-secondary">
     {% include "navbar.html" %}
     <div class="container text-center">
     {% block content %}
     {% endblock %}
     </div>
+    {% include "footer.html" %}
 </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
