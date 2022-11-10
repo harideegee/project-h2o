@@ -5,11 +5,11 @@
         <img src="{{url_for('static', filename = 'banner.jpg')}}" class="card-img" alt="banner">
     </div>
 <div class="container" style="margin: 50px 0;">
-    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#modal">Launch Software</button>
+    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#modal">Run Tests</button>
 </div>
 
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
     <div class="modal-header">
         <h5 class="modal-title" id="title">Please fill in the details with great accuracy to compute accurate results and help train the model.</h5>
@@ -20,45 +20,57 @@
     <div class="modal-body">
         <form action="/result/" method="POST">
             <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="ph">pH</label>
-                <input type="number" min="1" max="14" class="form-control" name="ph" placeholder="pH of water (1 to 14)" required>
-            </div>
-            <div class="form-group col-md-4">
-                <label for="hardness">Hardness (mg/L)</label>
-                <input type="number" class="form-control" name="hardness" placeholder="Capacity of water to precipitate soap" required>
-            </div>
-            <div class="form-group col-md-4">
-                <label for="solids">Solids (ppm)</label>
-                <input type="number" class="form-control" name="solids" placeholder="Total dissolved solids" required>
-            </div>
+                <div class="form-group col-md-12">
+                    <label for="ph">pH</label>
+                    <input type="number" min="1" max="14" class="form-control text-center text-white bg-dark" name="ph" placeholder="pH of water (1 to 14)" required>
+                </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-12">
+                    <label for="hardness">Hardness (mg/L)</label>
+                    <input type="number" class="form-control text-center text-white bg-dark" name="hardness" placeholder="Capacity of water to precipitate soap" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="solids">Solids (ppm)</label>
+                    <input type="number" class="form-control text-center text-white bg-dark" name="solids" placeholder="Total dissolved solids" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
                     <label for="chloramines">Chloramines (ppm)</label>
-                    <input type="number" class="form-control" name="chloramines" placeholder="Amount of Chloramines" required>
+                    <input type="number" class="form-control text-center text-white bg-dark" name="chloramines" placeholder="Amount of Chloramines" required>
                 </div>
-                <div class="form-group col-md-4">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
                     <label for="sulfate">Sulfate (mg/L)</label>
-                    <input type="number" class="form-control" name="sulfate" placeholder="Amount of Sulfates dissolved" required>
+                    <input type="number" class="form-control text-center text-white bg-dark" name="sulfate" placeholder="Amount of Sulfates dissolved" required>
                 </div>
-                <div class="form-group col-md-4">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
                     <label for="conductivity">Conductivity (&mu;S/cm)</label>
-                    <input type="number" class="form-control" name="conductivity" placeholder="Electrical conductivity of water" required>
+                    <input type="number" class="form-control text-center text-white bg-dark" name="conductivity" placeholder="Electrical conductivity of water" required>
                 </div>	
             </div>
             <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-12">
                     <label for="oc">Organic carbon (ppm)</label>
-                    <input type="number" class="form-control" name="oc" placeholder="Amount of organic carbon" required>
+                    <input type="number" class="form-control text-center text-white bg-dark" name="oc" placeholder="Amount of organic carbon" required>
                 </div>
-                <div class="form-group col-md-4">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
                     <label for="trihalomethanes">Trihalomethanes (&mu;g/L)</label>
-                    <input type="number" class="form-control" name="trihalomethanes" placeholder="Amount of Trihalomethanes" required>
+                    <input type="number" class="form-control text-center text-white bg-dark" name="trihalomethanes" placeholder="Amount of Trihalomethanes" required>
                 </div>
-                <div class="form-group col-md-4">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
                     <label for="turbidity">Turbidity (NTU)</label>
-                    <input type="number" class="form-control" name="turbidity" placeholder="Measure of light emiting property of water" required>
+                    <input type="number" class="form-control text-center text-white bg-dark" name="turbidity" placeholder="Measure of light emiting property of water" required>
                 </div>
             </div>
             <div class="modal-footer">
@@ -71,5 +83,14 @@
 </div>
 </div>
 </div>
+
+<style>
+.form-control::placeholder {
+    color: #ffffffaa;
+}
+label {
+    font-size: 20px;
+}
+</style>
 
 {% endblock %}
