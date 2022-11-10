@@ -1,2 +1,2 @@
-# water-potability-app
-flask web app that predicts the potability of water by giving in parameters to a ml model
+# Project H2O secret brewing territory
+Testing new features before main release
