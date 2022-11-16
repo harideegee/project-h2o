@@ -5,7 +5,6 @@ If you have any comments, questions, suggestions or anything, please visit our <
 
 ## Authors
 <a href="https://github.com/harideegee/project-h2o/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Hamza08dev/water-potability-app" />
   <img src="https://contrib.rocks/image?repo=harideegee/project-h2o" />
 </a><br>
 <a href="https://github.com/Hamza08dev">Mohammed Hamza</a>
