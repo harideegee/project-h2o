@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="card" style="padding: 20px; margin: 20px;">
-<h1 class="display-3">Results</h1>
-<p class="lead">Your input returned the following result: </p>
+<h1 class="display-3">Result</h1>
+<hr>
+
+<h3 class="display-4">Your input:</h3>
 
 <p class="lead">pH: {{ context.ph }}</p>
 <p class="lead">Hardness: {{ context.hard }}mg/L</p>
@@ -13,8 +15,9 @@
 <p class="lead">Organic Carbon: {{ context.oc }}ppm</p>
 <p class="lead">Trihalomethanes: {{ context.thm }}&mu;g/L</p>
 <p class="lead">Turbidity: {{ context.turb }}NTU</p>
-
-<h1 class="display-4">Potability: {{ context.potability }}</h1>
+<hr>
+<h3 class="display-5">Is this sample of water potable?</h3>
+<h1 class="display-4">{{ context.potability }}</h1>
 </div>
 
 {% endblock %}

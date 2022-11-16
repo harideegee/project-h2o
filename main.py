@@ -1,11 +1,15 @@
-from flask import Flask, render_template, request, redirect, jsonify, url_for 
+from flask import Flask, render_template, request, redirect
 import pickle
 import numpy as np
-import pandas as pd 
+
 
 model = pickle.load(open('rfc.pkl', 'rb'))
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '78fabf5575579bcb76daea4131c8b06f8d41462b08850e3f'
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("404.html")
 
 @app.route("/")
 def hello_world():
@@ -45,4 +49,4 @@ def potability_calc():
 
 
 if  __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
