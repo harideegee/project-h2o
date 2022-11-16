@@ -7,9 +7,10 @@ If you have any comments, questions, suggestions or anything, please visit our <
 <a href="https://github.com/harideegee/project-h2o/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=harideegee/project-h2o" />
 </a><br>
+<a href="https://github.com/harideegee">Harikrishnan D</a>
+<br>
 <a href="https://github.com/Hamza08dev">Mohammed Hamza</a>
 <br>
-<a href="https://github.com/harideegee">Harikrishnan D</a>
 
 ## Release Notes
 
