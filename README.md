@@ -1,4 +1,4 @@
-# Project H2O v1.1.0
+# Project H2O v1.1.1
 A flask webapp software that predicts the potability of water by giving in parameters to an ML model <br>
 If you have any comments, questions, suggestions or anything, please visit our <a href="https://github.com/harideegee/project-h2o/discussions">Discussions</a> area.<br>
 ![project](https://user-images.githubusercontent.com/82701406/202190644-18b3b91f-7c43-42e7-95d0-398ee4b68a99.jpg)
@@ -20,6 +20,7 @@ _**v1.0.2**_ Model successfully implemented, very minimalistic Bootstrap-styled 
 _**v1.0.3**_ App deployed to heroku <a href="https://project-h2o.herokuapp.com">https://project-h2o.herokuapp.com</a> <br>
 
 **_v1.1.0_** Complete GUI makeover, with dark theme and neater input fields
+**_v1.1.1_** Added error 404 handler and made some cosmetic edits to the results page (more structured results)
 
 ## Instructions
 #### Clone this repo into a location of your choice using `git clone "https://github.com/harideegee/project-h2o.git"`
