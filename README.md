@@ -19,8 +19,8 @@ _**v1.0.1**_ Beta version: First attempt to implement model, very minimalistic B
 _**v1.0.2**_ Model successfully implemented, very minimalistic Bootstrap-styled webapp<br>
 _**v1.0.3**_ App deployed to heroku <a href="https://project-h2o.herokuapp.com">https://project-h2o.herokuapp.com</a> <br>
 
-**_v1.1.0_** Complete GUI makeover, with dark theme and neater input fields
-**_v1.1.1_** Added error 404 handler and made some cosmetic edits to the results page (more structured results)
+**_v1.1.0_** Complete GUI makeover, with dark theme and neater input fields<br>
+**_v1.1.1_** Added error 404 handler and made some cosmetic edits to the results page (more structured results)<br>
 
 ## Instructions
 #### Clone this repo into a location of your choice using `git clone "https://github.com/harideegee/project-h2o.git"`
