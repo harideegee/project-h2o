@@ -1,15 +1,16 @@
 # Project H2O v1.1.0
 A flask webapp software that predicts the potability of water by giving in parameters to an ML model <br>
-If you have any comments, questions, suggestions or anything, please visit our <a href="https://github.com/harideegee/project-h2o/discussions">Discussions</a> area.
+If you have any comments, questions, suggestions or anything, please visit our <a href="https://github.com/harideegee/project-h2o/discussions">Discussions</a> area.<br>
+![project](https://user-images.githubusercontent.com/82701406/202190644-18b3b91f-7c43-42e7-95d0-398ee4b68a99.jpg)
 
 ## Authors
 <a href="https://github.com/harideegee/project-h2o/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Hamza08dev/water-potability-app" />
   <img src="https://contrib.rocks/image?repo=harideegee/project-h2o" />
 </a><br>
+<a href="https://github.com/harideegee">Harikrishnan D</a>
+<br>
 <a href="https://github.com/Hamza08dev">Mohammed Hamza</a>
 <br>
-<a href="https://github.com/harideegee">Harikrishnan D</a>
 
 ## Release Notes
 
