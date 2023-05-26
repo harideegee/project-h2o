@@ -1,5 +1,4 @@
-## Important Notice:
-The free web app hosting service, Heroku, has become pay-to-use, and hence the site is not functional. Please clone the repo to your machine to view the final product. Inconveniences are regretted.
+**Important Notice: The free web app hosting service, Heroku, has become pay-to-use, and hence the site is not functional. Please clone the repo to your machine to view the final product. Inconveniences are regretted.**
 
 # Project H2O v1.1.1
 A flask webapp software that predicts the potability of water by giving in parameters to an ML model <br>
